@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?kzg6gm');
+  src:  url('../fonts/icomoon.eot?kzg6gm#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?kzg6gm') format('truetype'),
+    url('../fonts/icomoon.woff?kzg6gm') format('woff'),
+    url('../fonts/icomoon.svg?kzg6gm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.iconfont{
+    font-family:"icomoon";
+    font-style: normal;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+    margin:0;
+    padding:0
+}
+body {
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b体,sans-serif;
+        line-height: 1.5;
+    color: #666;
+    background-color: #f6f6f6;
+}
+a {
+    text-decoration: none;
+}
+body a:focus, a:hover {
+    text-decoration: none;
+}
+.w {
+    position: relative;
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+header {
+    z-index: 10;
+    height: 80px;
+    background-color: #010101;
+    position: relative;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-style: none;
+}
+
+.jdred {
+    color: #f10215;
+}
+
+/* 顶部导航栏 */
+#shortcut {
+    position: relative;
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1 solid #dededf;
+    font-size: 12px;
+    line-height: 30px;
+    color: #999;
+}
+
+#shortcut .iconfont {
+    font-size: 12px;
+}
+
+#shortcut .city {
+    margin-left: 200px;
+}
+
+#shortcut .fr li {
+    float: left;
+    position: relative;
+}
+#shortcut .jdred {
+    color: #f10215;
+}
+
+#shortcut .fr li:first-child a:nth-child(2){
+    padding-right: 15px;
+}
+#shortcut .fr li:first-child a:nth-child(1) {
+    border: none;
+    display: inline;
+}
+#shortcut .fr li:last-child a:last-child {
+    border: 0;
+    padding-right: 0;
+}
+
+#shortcut li+li a {
+    margin-left : 15px;
+    padding-right: 15px;
+}
+#shortcut a {
+    color: #999;
+    height: 10px;
+    border-right: 1px solid;
+    border-color: #999;
+}
+
+#shortcut a:hover {
+    color: #f10215;
+}
+
+#shortcut .fr .qrcode {
+    position: absolute;
+    z-index: 3;
+    right: 5px;
+    width: 68px;
+    height: 68px;
+    background-color: white;
+    border: 1px solid #dededf;
+    line-height: 68px;
+}
+#shortcut .fr .qrcode img{
+    display: block;
+    margin: 4px auto;
+}
+#shortcut .fr li:last-child::before {
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent white transparent;
+    bottom: 0; left: 45%;
+    height: 0; width: 0;
+}
+
+
+/* 顶部搜索栏 */
+#search .w{
+    position: relative;
+    height: 140px;
+    /* background-color: lightblue; */
+}
+
+#search .logo {
+    width: 190px;
+    height: 170px;
+    position: absolute;
+    top: -31px;
+    left: 0px;
+    box-shadow: 0 -12px 10px rgba(0,0,0,.2);
+    border-bottom: 2px solid #ededed;
+    background-color: #fff;
+}
+
+#search form {
+    position: absolute;
+    left: 320px;
+    top: 25px;
+    width: 550px;
+    height: 35px;
+}
+#search input {
+    outline: none;
+    border: none;
+    top: 0;
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 3px 47px 2px 3px;
+}
+#search .top-search a {
+    position: absolute;
+    right: 65px;
+    top: 8px;
+    width: 19px;
+    height: 15px;
+    color: #666;
+}
+#search a:hover {
+    color: #f10215;
+}
+#search button {
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #f10215;
+    /* font-size: 20px; */
+    /* font-weight: 700; */
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+#search button:hover {
+    cursor: pointer;
+}
+
+    /* shopcar */
+#search .shopcar {
+    position: absolute;
+    right: 99px;
+    top: 25px;
+    background-color: #fff;
+}
+#search .shopcar .innerCar { /*购物车内部放块inner撑起shopcar,并将位置relative,为其内元素定位做准备 */
+    position: relative;
+    border: 1px solid #ededed;
+    width: 190px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+#search .shopcar .innerCar .carImg {
+    position: absolute;
+    left: 45px;
+    font-size: 14px;
+}
+#search .shopcar .innerCar .goodsCount {
+    position: absolute;
+    left: 130px;
+    top: 5px;
+    padding: 1px;
+    font-size: 12px;
+    width: 12px;
+    border-radius: 7px;
+    background-color: #f10215;
+    text-align: center;
+    line-height: 12px;
+    color: #fff;
+    font-style: normal;
+}
+
+
+    /* mid-nav */
+#search .mid-nav {
+    position: absolute;
+    top: 65px;
+    left: 320px;
+    width: 550px;
+    height: 20px;
+    /* background-color: pink; */
+}
+#search .mid-nav ul li {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    padding-right: 10px;
+    line-height: 20px;
+}
+#search .mid-nav ul li+li a{
+    color: #666;
+}
+#search .mid-nav ul li+li a:hover {
+    color: #f10215;
+}
+#search .mid-nav ul li:first-child a:hover {
+    color: #c81623;
+}
+
+    /* bot-nav */
+#search .bot-nav {
+    position: absolute;
+    width: 790px;
+    height: 40px;
+    bottom: 0;
+    left: 190px;
+    /* border: 2px solid green; */
+}
+#search .bot-nav li {
+    float: left;
+    margin-left: 25px;
+}
+#search .bot-nav li a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333333;
+}
+#search .bot-nav li a:hover {
+    color: #f10215;
+}
+#search .bot-nav .spacer {
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin: 15px -8px auto 19px;
+}
+
+/* 主体轮播图部分*/

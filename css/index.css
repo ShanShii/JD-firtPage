@@ -1,0 +1,165 @@
+#main .w {
+    position: relative;
+    height: 480px;
+    /* background-color: pink; */
+}
+
+/* 左侧nav col1 */
+#main .main-col1 {
+    width: 190px;
+    height: 480px;
+    background: #fff;
+    margin-right: 10px;
+}
+#main .main-col1 .wrapper {
+    padding-top: 9px;
+}
+#main .main-col1 ul li {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#main .main-col1 ul li span {
+    margin: 0 2px;
+}
+#main .main-col1 ul li a {
+    font-size: 14px;
+    color: #626262;
+}
+#main .main-col1 ul li:hover {
+    background-color: #d9d9d9;
+}
+#main .main-col1 ul li a:hover {
+    color: #c81623;
+}
+
+
+/* 中 轮播图 col2 */
+#main .main-col2 {
+    margin-top: 10px;
+    margin-right: 10px;
+    position: relative;
+    /* background-color: skyblue; */
+}
+#main .main-col2 #slideWindow {
+    position: relative;
+    width: 590px;
+    height: 470px;
+	margin: 0 auto;
+	/* background-color: pink; */
+	/*transform会让子absolute一直相对此父元素定位？!即使手动static也不行，可能因为transform的时候已经reletive了！*/
+	overflow: hidden;
+}
+#main .main-col2 #slideWindow img {
+	height: 100%;
+	width: 100%;
+}
+#main .main-col2 #slideWindow #btn-left, #btn-right {
+	height: 40px;
+	width: 5%;
+	top: 50%;
+	/*absolute可以显示overflow: hidden中,Why？*/
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    border: none;
+    text-align: center;
+    /*opacity: 0.2;*/
+}
+#main .main-col2 #slideWindow #btn-left:hover, #btn-right:hover {
+    color: #fff;
+    background-color: #000;
+    background-color: rgba(0,0,0,.5);
+}
+#btn-left {
+	left: 0px;
+}
+#btn-right {
+	right: 0px;
+}
+#main .main-col2 #slideWindow #btn-right i {
+    margin-left: -7px;
+    /* 为什么你对不齐？！ */
+	/*坑啊！*/
+}
+
+#main .main-col2 #slideIndicator {
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    bottom: 10px;
+    left: 30px;
+
+}
+#main .main-col2 #slideIndicator .indicatorBtn {
+    /* float: left; */
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    border: 1px solid #fff;
+    margin: 0 5px;
+}
+#main .main-col2 #slideIndicator .iActive {
+    background-color: #fff;
+    box-shadow: 0.1px 0.1px 0 4px rgba(255,255,255,.3);
+}
+
+
+
+#main .main-col3, .main-col4 {
+    width: 190px;
+    height: 470px;
+}
+/* 中右 三栏广告 col3 */
+#main .main-col3 .grid{
+    margin-top: 10px;
+    /* 清除img缝隙, 将img block也有同样效果 */
+    font-size: 0;
+}
+#main .main-col3 .grid img {
+    width: 190px;
+    height: 150px;
+}
+
+/*右 user+news+service*/
+#main .main-col4 .user {
+    height: 150px;
+    margin-top: 10px;
+    background-color: #123;
+}
+
+#main .main-col4 .news {
+    height: 130px;
+    background-color: #456;
+}
+
+#main .main-col4 .service {
+    height: 194px;
+    background-color: #789;
+}
+
+#main .main-col4 .service ul {
+    padding: 18px 11px 11px;
+}
+#main .main-col4 .service li {
+    position: relative;
+    float: left;
+    width: 42px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+#main .main-col4 .service li i {
+    display: block;
+    margin: 0 auto;
+    width: 27px;
+    height: 25px;
+    background-image: url("../images/sprite_fs@1x.png") no-repeat;
+    /*background-position: -0px -0px;*/
+    background-color: pink;
+}
